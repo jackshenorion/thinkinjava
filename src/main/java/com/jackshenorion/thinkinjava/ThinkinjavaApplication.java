@@ -8,5 +8,6 @@ public class ThinkinjavaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ThinkinjavaApplication.class, args);
+		System.out.println("hello world");
 	}
 }

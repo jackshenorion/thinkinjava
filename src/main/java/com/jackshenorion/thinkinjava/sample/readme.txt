@@ -1,0 +1,1 @@
+This folder is used to write some sample codes which are usually not nice though.
