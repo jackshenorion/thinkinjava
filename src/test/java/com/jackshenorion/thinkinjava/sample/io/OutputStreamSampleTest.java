@@ -9,6 +9,5 @@ public class OutputStreamSampleTest {
 
     @Test
     public void testWrite() throws Exception {
-        OutputStreamSample.writeUsingOutputStream();
     }
 }

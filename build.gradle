@@ -27,5 +27,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-jersey')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-web-services')
+	compile('com.sun.media:jai_imageio:1.2-pre-dr-b04')
+    compile('org.apache.pdfbox:pdfbox:2.0.6')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
