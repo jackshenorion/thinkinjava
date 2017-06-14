@@ -37,7 +37,7 @@ public class PdfboxSample {
                 PDImageXObject image = LosslessFactory.createFromImage(document, bi);
 
                 PDPageContentStream contentStream = new PDPageContentStream(document, blankPage);
-                contentStream.drawImage(image, 5, 5);
+                contentStream.drawImage(image, 6, 6);
                 contentStream.close();
                 document.addPage( blankPage );
             }
