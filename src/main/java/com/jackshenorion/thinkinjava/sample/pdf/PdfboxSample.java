@@ -41,7 +41,7 @@ public class PdfboxSample {
                 contentStream.close();
                 document.addPage( blankPage );
             }
-            document.save("test.pdf"); //test 
+            document.save("test.pdf"); //test
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
