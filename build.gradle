@@ -7,12 +7,16 @@ buildscript {
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath "gradle.plugin.aspectj:gradle-aspectj:0.1.6"
 	}
 }
-
+project.ext {
+	aspectjVersion = '1.8.13'
+}
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: "aspectj.gradle"
 
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
@@ -27,7 +31,10 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-jersey')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-web-services')
-	compile('com.sun.media:jai_imageio:1.2-pre-dr-b04')
     compile('org.apache.pdfbox:pdfbox:2.0.6')
+	compile group: 'org.aspectj', name: 'aspectjtools', version: '1.8.13'
+	compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.13'
+	compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.13'
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
